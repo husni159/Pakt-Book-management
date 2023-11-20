@@ -1,0 +1,40 @@
+<app-logout></app-logout>
+<div>
+    <h2>Book Listing</h2>
+    <button (click)="addbook()">Add Book</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Publication Date</th>
+          <th>ISBN</th>
+          <th>Genre</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.publication_date }}</td>
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.genre }}</td>
+          <td>
+            <button (click)="editBook(book.id)">Edit</button>
+          </td>
+          <td>
+            <button (click)="deleteBook(book.id)">Delete</button>
+          </td>
+         </tr> 
+      </tbody>
+    </table>
+  </div>
+  
+<!-- Pagination -->
+<div class="pagination">
+  <button [disabled]="currentPage === 1" (click)="onPageChange(currentPage - 1)">Previous</button>
+  <span>{{ currentPage }} / {{ totalPages }}</span>
+  <button [disabled]="currentPage === totalPages" (click)="onPageChange(currentPage + 1)">Next</button>
+</div>

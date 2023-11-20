@@ -1,0 +1,82 @@
+/* customer/book-listing/book-listing.component.css */
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .book-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+  }
+  
+  .book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .book-details {
+    margin-top: 8px;
+  }
+
+body {
+  background: linear-gradient(to bottom, #3498db, #2c3e50); /* Gradient for the page background */
+  font-family: 'Poppins', sans-serif;
+  color: #fff; 
+}
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.book-card {
+  background: linear-gradient(to bottom, #fff, #f5f5f5); /* Gradient for the card background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.book-details {
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: linear-gradient(to bottom, #4caf50, #45a049); /* Gradient for button background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination span {
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+.pagination button[disabled] {
+  background: linear-gradient(to bottom, #aaa, #999); 
+  cursor: not-allowed;
+}
+
+.book-details h3 {
+  font-family: 'Playfair Display', serif;
+}
+

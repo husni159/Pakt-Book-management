@@ -1,0 +1,73 @@
+
+body {
+  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 800px; 
+  background-color: #fff; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: linear-gradient(to bottom, #2ecc71, #27ae60);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination span {
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+.pagination button[disabled] {
+  background: linear-gradient(to bottom, #aaa, #999);
+  cursor: not-allowed;
+}

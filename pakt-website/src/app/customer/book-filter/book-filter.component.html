@@ -1,0 +1,41 @@
+
+<div class="container filter-container">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="filters.title">
+      </div>
+  
+      <div class="form-group col-md-6">
+        <label for="author">Author:</label>
+        <input type="text" class="form-control" id="author" [(ngModel)]="filters.author">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="publication_date">Publication Date:</label>
+        <input type="date" class="form-control" id="publication_date" [(ngModel)]="filters.publication_date">
+      </div>
+  
+      <div class="form-group col-md-6">
+        <label for="isbn">ISBN:</label>
+        <input type="text" class="form-control" id="isbn" [(ngModel)]="filters.isbn">
+      </div>
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="genre">Genre:</label>
+        <input type="text" class="form-control" id="genre" [(ngModel)]="filters.genre">
+      </div>
+  
+      <div class="form-group col-md-6">
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-success" (click)="applyFilters()">Apply Filters</button>
+          <button class="btn btn-secondary" (click)="clearFilters()">Clear Filters</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+<app-logout></app-logout>
+
+<div class="edit-book-container">
+    <h2>Edit Book</h2>
+
+    <form [formGroup]="bookForm" (ngSubmit)="updateBook()" class="book-form">
+        <label>Title: <input formControlName="title"></label><br>
+        <label>Author: <input formControlName="author"></label><br>
+        <label>Publication Date: <input type="date" formControlName="publication_date"></label><br>
+        <label>ISBN: <input formControlName="isbn"></label><br>
+        <label>Genre: <input formControlName="genre"></label><br>
+
+        <button type="submit" [disabled]="!bookForm.valid" class="update-button">Update Book</button>
+    </form>
+
+    <a routerLink="/dashboard" class="back-link">Back to Book Listing</a>
+</div>
