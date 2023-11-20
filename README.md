@@ -1,47 +1,47 @@
 # Pakt-Book-management
 Book management
 
-Step 1-->  Create a Database with the name of pakt
-Step 2--> In the above code pakt folder represents Backend in Laravel and pakt-website for Front end in angular.
-Step 3--> run php artisan serve inside pakt folder to run Backend 
-Step 4--> run migrations (php artisan migrate) and seeders (php artisan db:seed
+Step 1-->  Create a Database with the name of pakt <br />
+Step 2--> In the above code pakt folder represents Backend in Laravel and pakt-website for Front end in angular. <br />
+Step 3--> run php artisan serve inside pakt folder to run Backend <br />
+Step 4--> run migrations (php artisan migrate) and seeders (php artisan db:seed <br />
 )
-Step 5--> Open terminal and run ng serve inside pakt-website folder to run front end.
-URLs:   
+Step 5--> Open terminal and run ng serve inside pakt-website folder to run front end. <br />
+URLs:   <br />
 
-1 --> Admin Login Page
-    URL : http://localhost:4200/admin-login
-    user name : admin
-    Password : Test1234!
+1 --> Admin Login Page <br />
+    URL : http://localhost:4200/admin-login <br />
+    user name : admin <br />
+    Password : Test1234! <br />
 
-2 --> Book Listing with pagination
-    URL : http://localhost:4200/dashboard
-    Method : GET
-3--> Add book
-    URL : http://localhost:4200/books/add
-    Method : POST
-4--> Edit Book 
-    URL : http://localhost:4200/books/edit/4
-    Method : PUT
+2 --> Book Listing with pagination <br />
+    URL : http://localhost:4200/dashboard <br />
+     Method : GET <br />
+3--> Add book <br />
+    URL : http://localhost:4200/books/add <br />
+    Method : POST <br />
+4--> Edit Book <br />
+    URL : http://localhost:4200/books/edit/4 <br />
+    Method : PUT <br />
 
-5--> Delete Book 
-    URL : http://127.0.0.1:8000/api/books/4
-    Method : DELETE
+5--> Delete Book <br />
+    URL : http://127.0.0.1:8000/api/books/4 <br />
+    Method : DELETE <br />
     
-6--> List all Books and apply filter
-   URL : http://localhost:4200/
+6--> List all Books and apply filter <br />
+   URL : http://localhost:4200/ <br />
 
-API and details
+API and details <br />
 
-1--> API for admin Login 
+1--> API for admin Login <br /> 
 
- url : http://127.0.0.1:8000/api/login-user
+ url : http://127.0.0.1:8000/api/login-user <br />
 
- Request:
- Body : 
- {"username":"admin", "password" : "Test1234!"}
+ Request: <br />
+ Body : <br />
+ {"username":"admin", "password" : "Test1234!"} <br />
 
-Rsponse:
+Rsponse: <br />
 
 {
     "status": true,
@@ -62,9 +62,9 @@ Rsponse:
     }
 }
 
-2 --> API for fetching a book
-    Url : http://127.0.0.1:8000/api/books/1
-    Method : GET
+2 --> API for fetching a book <br />
+    Url : http://127.0.0.1:8000/api/books/1 <br />
+    Method : GET <br />
     Respose :
 {
     "status": true,
@@ -86,11 +86,11 @@ Rsponse:
     }
 }
 
-3 -->  Fetch all books with filter
+3 -->  Fetch all books with filter <br />
 
-  URL : http://127.0.0.1:8000/api/search?page=1&perpage=10&author=Annamarie
-  Method :GET
-  Response : 
+  URL : http://127.0.0.1:8000/api/search?page=1&perpage=10&author=Annamarie <br />
+  Method :GET <br />
+  Response : <br />
   {
     "status": true,
     "message": null,
@@ -139,13 +139,13 @@ Rsponse:
         "to": 1,
         "total": 1
     }
-}
+} <br />
 
-4 --> 
-Fetch all books
-URL : http://127.0.0.1:8000/api/search?page=1
-METHOD : GET
-Response : 
+4 -->  <br />
+Fetch all books <br />
+URL : http://127.0.0.1:8000/api/search?page=1 <br />
+METHOD : GET <br />
+Response : <br />
 {
     "status": true,
     "message": null,
@@ -256,13 +256,13 @@ Response :
     }
 }
 
+<br />
+5-->  Create new book <br />
 
-5-->  Create new book
-
-Authorization : Bearer token gettingng from Login API
-Url : http://127.0.0.1:8000/api/books
-Method : POST
-Request : 
+Authorization : Bearer token gettingng from Login API <br />
+Url : http://127.0.0.1:8000/api/books <br />
+Method : POST <br />
+Request :  <br />
 
 {
 "title":"newlyadded",
@@ -272,8 +272,8 @@ Request :
 "description":"description",
 "genre":"genre"
 }
-
-Response : 
+<br />
+Response : <br />
 {
     "status": true,
     "message": "Book added successfully",
@@ -291,14 +291,14 @@ Response :
         "id": 122
     }
 }
+<br />
+6 --> Update a book <br />
 
-6 --> Update a book 
+Authorization : Bearer token gettingng from Login API<br />
 
-Authorization : Bearer token gettingng from Login API
-
-Url : http://127.0.0.1:8000/api/books/1
-Method :PUT
-Request :
+Url : http://127.0.0.1:8000/api/books/1 <br />
+Method :PUT <br />
+Request : <br />
 {
   "title": "alchemest",
   "author": "author",
@@ -308,12 +308,12 @@ Request :
   "image": "https://via.placeholder.com/640x480.png/008822?text=qui",
   "genre": "genre"
 }
+<br />
+7 ---> Delete book <br />
 
-7 ---> Delete book
+Authorization : Bearer token gettingng from Login API <br />
 
-Authorization : Bearer token gettingng from Login API
-
- Url : http://127.0.0.1:8000/api/books/118
- Method : DELETE
+ Url : http://127.0.0.1:8000/api/books/118 <br />
+ Method : DELETE <br />
 
  
